@@ -1,4 +1,4 @@
-# Terraform IAC for AWS Transit Gateway
+# Terraform IAC for AWS EKS node Group
 
 ## Prerequisites
 
