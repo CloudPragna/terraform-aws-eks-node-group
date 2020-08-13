@@ -76,7 +76,7 @@ variable "labels" {
 variable "release_version" {
   type        = string
   description = "AMI version of the EKS Node Group. Defaults to latest version for Kubernetes version"
-  default     = "1.16.8-20200507"
+  default     = "1.17.9-20200723"
 }
 
 variable "remote_access" {

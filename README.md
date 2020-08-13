@@ -30,13 +30,16 @@ module "examplenodgroup" {
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| terraform | ~> 0.12.24 |
+| aws | ~> 2.60 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | n/a |
+| aws | ~> 2.60 |
 
 ## Inputs
 
@@ -52,7 +55,7 @@ No requirements.
 | labels | Key-value mapping of Kubernetes labels. Only labels that are applied with the EKS API are managed by this argument. | `map(string)` | <pre>{<br>  "node_group": "dev"<br>}</pre> | no |
 | node\_group\_name | Name of the Node Group | `string` | `"example"` | no |
 | node\_role\_arn | Amazon Resource Name (ARN) of the IAM Role that provides permissions for the EKS Node Group. | `string` | `"arn:aws:iam::xxx:role/xxxxeks-node-iam-role"` | no |
-| release\_version | AMI version of the EKS Node Group. Defaults to latest version for Kubernetes version | `string` | `"1.14.7-20190927"` | no |
+| release\_version | AMI version of the EKS Node Group. Defaults to latest version for Kubernetes version | `string` | `"1.17.9-20200723"` | no |
 | remote\_access | Configuration block with remote access settings | `map` | <pre>{<br>  "ec2_ssh_key": null,<br>  "source_security_group_ids": null<br>}</pre> | no |
 | scaling\_config | Configuration block with scaling settings | `map(string)` | <pre>{<br>  "desired_size": 1,<br>  "max_size": 1,<br>  "min_size": 1<br>}</pre> | no |
 | subnet\_ids | Identifiers of EC2 Subnets to associate with the EKS Node Group. | `list` | <pre>[<br>  "subnet-xxxx",<br>  "subnet-xxxx",<br>  "subnet-xxx"<br>]</pre> | no |
